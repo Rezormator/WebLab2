@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-size: 24px;
 }
@@ -32,12 +31,12 @@ body {
     margin: 3px;
     box-shadow: 0 10px 15px rgba(220, 220, 220, 0.5);
     display: flex;
-    align-items: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 .header, .small-header, .footer {
     height: 80px;
+    align-items: center;
 }
 
 .header {
@@ -57,22 +56,18 @@ body {
 }
 
 .abs {
-    width: 100px;
+    min-width: 150px;
+    max-width: 150px;
+    justify-content: center;
 }
 
-.article {
-    flex: auto;
+.abs-1 {
+    padding-top: 90px;
 }
 
 .navigation-bar {
     max-height: 50px;
 }
-
-/*.yellow-massage {*/
-/*    !*max-width: 200px;*!*/
-/*    !*max-height: 27px;*!*/
-/*    !*overflow: hidden;*!*/
-/*}*/
 
 .yellow-massage, .navigation-bar-element {
     color: black;
@@ -93,4 +88,11 @@ body {
 
 .navigation-bar-element:hover{
     background-color: #fbcd44;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    border-radius: 5px;
 }
