@@ -12,7 +12,7 @@ body {
         "ads-1 article ads-2"
         "footer footer footer";
     grid-template-columns: 150px auto 150px;
-    grid-template-rows: 80px 80px auto 80px;
+    grid-template-rows: minmax(80px, auto) minmax(80px, auto) auto minmax(80px, auto);
     min-height: 100vh;
     height: auto;
 }
@@ -22,16 +22,28 @@ body {
     border-radius: 3px;
     margin: 3px;
     box-shadow: 0 10px 15px rgba(220, 220, 220, 0.5);
-    display: flex;
     padding: 10px;
+    display: grid;
+}
+
+.header, .small-header, .footer {
+    align-items: center;
 }
 
 .header {
     grid-area: header;
+    grid-template-columns: auto auto;
+    position: sticky;
+    top: 0;
+}
+
+.navigation-bar {
+    text-align: right;
 }
 
 .small-header {
     grid-area: small-header;
+    text-align: center;
 }
 
 .ads-1 {
@@ -48,7 +60,34 @@ body {
 
 .footer {
     grid-area: footer;
-    justify-content: right;
     background-color: #000000;
     color: white;
+    text-align: right;
+}
+
+.yellow-massage, .navigation-bar-element {
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline;
+}
+
+.yellow-massage {
+    background-color: #fbcd44;
+}
+
+.navigation-bar-element {
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation-bar-element:hover{
+    background-color: #fbcd44;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }

@@ -5,11 +5,10 @@
 }
 
 body {
-    height: auto;
-    min-height: 100vh;
     display: flex;
+    min-height: 100vh;
+    height: auto;
     flex-direction: column;
-    padding: 1px;
 }
 
 .divide-vertically {
@@ -35,7 +34,8 @@ body {
 }
 
 .header, .small-header, .footer {
-    height: 80px;
+    min-height: 80px;
+    height: auto;
     align-items: center;
 }
 
@@ -55,18 +55,17 @@ body {
     color: white;
 }
 
-.abs {
+.article {
+    gap: 10px;
+}
+
+.ads {
     min-width: 150px;
     max-width: 150px;
     justify-content: center;
 }
 
-.abs-1 {
-    padding-top: 90px;
-}
-
-.navigation-bar {
-    max-height: 50px;
+.ads-1 {
 }
 
 .yellow-massage, .navigation-bar-element {

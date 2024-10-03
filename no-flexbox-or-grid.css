@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.block {
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin: 3px;
+    box-shadow: 0 10px 15px rgba(220, 220, 220, 0.5);
+    padding: 10px;
+}
+
+.main-body {
+    font-size: 0;
+    width: 100%;
+    min-height: calc(100vh - 86px);
+}
+
+.centre-header {
+    display: inline-block; /* Відображається як inline-block */
+    width: 90%; /* Ширина 90% */
+    background-color: lightblue; /* Колір фону для наочності */
+    vertical-align: top; /* Вертикальне вирівнювання */
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    display: table;
+    min-height: 80px;
+    width: calc(100% - 6px);
+}
+
+.ads {
+}
+
+.ads-1 {
+}
+
+.ads-2-container {
+    display: inline-block; /* Відображається як inline-block */
+    width: 10%; /* Ширина 10% */
+    background-color: lightcoral; /* Колір фону для наочності */
+    vertical-align: top; /* Вертикальне вирівнювання */
+}
+
+.ads-2 {
+    height: 100%;
+    width: calc(100% - 6px);
+}
+
+.small-header {
+}
+
+.article {
+}
+
+.footer {
+    display: table;
+    min-height: 80px;
+    width: calc(100% - 6px);
+    background-color: #000000;
+}
+
+.y, .x {
+    display: table-cell;
+    margin: 0;
+    padding: 0 1em 0;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.y {
+    text-align: right;
+}
+
+.yellow-massage, .navigation-bar-element {
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline;
+}
+
+.yellow-massage {
+    background-color: #fbcd44;
+}
